@@ -1,0 +1,53 @@
+{
+    "baseUrl":"https://overseas-kol.inner.youdao.com",
+    "pluginsFile": "cypress/plugins/index.js",
+    "downloadsFolder": "cypress/downloads",
+    "videoRecording": false, 
+    "video":false,
+    "screenshotsFolder": "mochawesome-report/screenshots",
+    "integrationFolder": "cypress/integration/test", 
+    "chromeWebSecurity": false,
+    "pageLoadTimeout":100000,
+    "requestTimeout": 50000,
+    "responseTimeout": 100000,
+    "defaultCommandTimeout": 15000,
+    "execTimeout": 60000,
+    "reporter": "cypress-multi-reporters",
+    "reporterOptions": {
+      "reporterEnabled": "mochawesome,mocha-junit-reporter",
+      "mochawesomeReporterOptions": {
+        "reportDir": "mochawesome-report",
+        "charts": true,
+        "reportPageTitle": "My Test Suite",
+        "embeddedScreenshots": true,
+        "inlineAssets": true,
+        "overwrite": false,
+        "json":true,
+        "html":false
+      },
+      "mochaJunitReporterReporterOptions": {
+        "mochaFile": "junit-report/test-results.[hash].xml",
+        "toConsole": true
+      }
+    },
+    "env": {
+      "testDb": {
+        "host": "123.123.219.77",
+        "port": "3307",
+        "user": "eadonline4nb",
+        "password": "new1ife4Th1sAugust",
+        "database": "kol_overseas_test"
+      },
+      "prestageDb": {
+        "host": "123.125.40.60",
+        "port": "3308",
+        "user": "eadonline4nb",
+        "password": "new1ife4Th1sAugust",
+        "database": "kol_overseas_hongjj"
+      }
+    },
+    "retries": {
+      "runMode": 1,
+      "openMode": 1
+    }
+}
