@@ -1,5 +1,5 @@
 import examplePage from '@page/example'
-import { admin } from '@constants/data'
+import { admin } from '@constants/user'
 
 describe('example test', () => {
   // 初始化examplePage页面
@@ -8,7 +8,7 @@ describe('example test', () => {
   it('success test', () => {
     cy.visit('/' + '/login')
     // 使用元素
-    page.usernameInput.type(admin.email).clear()
+    page.usernameInput().type(admin.email).clear()
 
     // 使用方法
     page.login(admin.email, admin.password)
@@ -20,7 +20,7 @@ describe('example test', () => {
   it('fail test', () => {
     cy.visit('/' + '/login')
     // 使用元素
-    page.usernameInput.type(admin.email).clear()
+    page.usernameInput().type(admin.email).clear()
 
     // 使用方法
     page.login(admin.email, admin.password)

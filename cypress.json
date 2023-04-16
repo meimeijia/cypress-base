@@ -5,7 +5,7 @@
     "videoRecording": false, 
     "video":false,
     "screenshotsFolder": "mochawesome-report/screenshots",
-    "integrationFolder": "cypress/integration/test", 
+    "integrationFolder": "cypress/integration", 
     "chromeWebSecurity": false,
     "pageLoadTimeout":100000,
     "requestTimeout": 50000,
