@@ -4,10 +4,11 @@
         "paths": {
             "@constants/*": ["cypress/common/constants/*"],
             "@page/*": ["cypress/common/page/*"],
+            "@api/*": ["cypress/common/api/*"],
         }
     },
     "include": [
         "/node_modules/cypress",
         "cypress/**/*.js"
-    ]
+   ]
 }

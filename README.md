@@ -95,6 +95,26 @@ cy.request(exampleLoginUrl) // 发送请求
 4. `iframe-example`: cypress操作iframe示例
 5. `mysql-example`: cypress操作mysql示例
 6. `promise-example`: cypress使用异步函数示例
+7. `mock-example` : cypress使用mock数据进行验证
+
+```
+mock使用步骤
+1. fixture文件夹中定义json数据，如fixture/exampleJsonData.json
+{
+  "error_code":0,
+  "error_message":"success",
+}
+2. case中使用
+  //拦截请求
+  cy.intercept("/api/data", { fixture: "exampleJsonData.json" }).as("getData")
+  // do something send requst
+  // 等待请求后验证内容是否是exampleJsonData.json中的内容
+  cy.wait("@getData").then((res) => {
+    cy.get("#data-list li")
+      .first()
+      .should("contain", "success")
+  })
+```
 
 
 ## 🌍 部署
@@ -111,7 +131,9 @@ cypress基础环境
 ### 持续集成之jenkins
 cypress-base已配置基础jenkins:
 http://ci.corp.youdao.com/jenkins/view/eadPublicView/job/cypress-base/
-该自动部署job已配置junit & mocha 两种测试报告
+
+该自动部署job包含配置junit & mocha 两种测试报告
+
 可复制该job后，自定修改配置内容
 ### 持续集成之ci
 
@@ -122,6 +144,7 @@ http://ci.corp.youdao.com/jenkins/view/eadPublicView/job/cypress-base/
 [官方文档](https://docs.cypress.io/guides/getting-started/installing-cypress)
 
 ## 其它
+
 POPO联系：zhaojiaying01@corp.netease.com
 
 
