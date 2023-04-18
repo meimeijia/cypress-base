@@ -1,0 +1,12 @@
+{
+	"error_code": 0,
+	"error_message": "success",
+	"data": {
+		"userId": 100634,
+		"email": "auto-test@email",
+		"userType": 4,
+		"status": 3,
+		"authorization": "eyJhbGciOiJIUzUxMiJ9.eyJrb2xJZCI6MCwiY3JlYXRlZCI6MTY4MTgwMDQzNTIwNywibmFtZSI6IueuoeeQhua1i-ivlSIsImtvbE5hbWUiOiIiLCJpZCI6MTAwNjM0LCJ0eXBlIjo0LCJleHAiOjE2ODE4MzY0MzUyMDcsInBsYXRmb3JtIjoiIn0.WL091eDZ4ID05bG2qeDGAW8qiveneewZzHNEKlSEsSRuHOMGeIrAfFwgKgTigRebLA4-EQVJXCC06esOD9-8YA",
+		"mcnApplyLink": ""
+	}
+}
