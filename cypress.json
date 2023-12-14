@@ -1,5 +1,5 @@
 {
-    "baseUrl":"https://overseas-kol.inner.youdao.com",
+    "baseUrl":"https://baidu.com",
     "pluginsFile": "cypress/plugins/index.js",
     "downloadsFolder": "cypress/downloads",
     "videoRecording": false, 

@@ -130,14 +130,14 @@ cypress基础环境
 
 ### 持续集成之jenkins
 cypress-base已配置基础jenkins:
-http://ci.corp.youdao.com/jenkins/view/eadPublicView/job/cypress-base/
-
+XXXX
 该自动部署job包含配置junit & mocha 两种测试报告
 
 可复制该job后，自定修改配置内容
 ### 持续集成之ci
 
 待补充公共方法
+
 ## 📓 文档
 
 
